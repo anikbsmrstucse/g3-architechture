@@ -187,8 +187,54 @@ header {
     font-weight: 500;
 }
 
-/*  */
+/* facts section styles */
+.facts-items{
+    padding: 100px 180px;
+}
+.fact-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+.fact-des {
+    color: var(--dark-03);
+    line-height: 26px;
+}
 
+/* company statstic design */
+.company-stat {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 195px;
+    gap: 50px;
+}
+.stat-item {
+    padding: 35px 30px 60px 30px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    transition: 2s;
+}
+.stat-item img {
+    margin-bottom: 5px;
+}
+.stat-item .item-title {
+    font-size: 30px;
+    margin-top: 5px;
+    color: var(--secondary-color);
+}
+.item-subtitle {
+    font-size: 16px;
+    color: var(--dark-03);
+    font-weight: 600;
+}
+.stat-item:hover {
+    transform: rotate(90deg) scale(.5) skew(-45deg);
+    background-color: rgba(255, 127, 80, 0.3);
+    box-shadow: 5px 5px 25px var(--dark-03);
+}
 
 
 
@@ -264,6 +310,16 @@ header {
         transform: scale(1.5);
         margin-bottom: 40px;
     }
+    .facts-items {
+        padding: 20px 20px;
+    }
+    .company-stat {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin: 0;
+    }
 }
 /* for landscape mode */
 @media only screen and (max-width: 667px)  {
@@ -335,5 +391,12 @@ header {
         margin-top: 80px;
         transform: scale(1.5);
         margin-bottom: 80px;
+    }
+    .facts-items {
+        padding: 20px 20px;
+    }
+    .company-stat {
+
+        flex-direction: column;
     }
 }
